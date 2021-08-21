@@ -1,0 +1,83 @@
+/* Reset all default margins */
+* {
+    margin: 0
+}
+
+html, body
+{
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    background-color:rgb(124, 120, 128);
+    font-family:Arial, Helvetica, sans-serif
+}
+
+p {
+    margin: 0.5em 0 0.5em 0;
+}
+
+header {
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color:rgb(155, 137, 146);
+    padding: 10px;
+}
+
+nav a:visited, 
+nav a:link {
+    color:white;
+    text-decoration: none;
+}
+
+nav > ul {
+    display: inline;
+    padding: 0;
+}
+
+/* Inheritance by li */
+nav > ul > li {
+    display: inline-block;
+    list-style: none;
+    margin: 0 5px 0 5px;
+}
+
+main {
+    display: block;
+    background-image: url('images/background.png');
+    min-height: 86%;
+    padding-top: 3em;
+    padding-bottom: 3em;
+}
+
+footer {
+    padding: 15px;
+}
+
+aside, article {
+    padding: 2em;
+}
+
+aside {
+    text-align: center;
+}
+
+article {
+    width: 75%;
+}
+
+/* Desktop */
+@media only screen and (min-width: 768px){
+    main {
+        display: flex;
+    }
+
+    aside {
+        margin-left: 2%;
+    }
+
+}

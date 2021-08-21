@@ -70,6 +70,48 @@ article {
     width: 75%;
 }
 
+/* Pie */
+
+.pie{
+    background-color: white;
+    margin: 10px;
+    padding: 10px;
+    width: 200px;
+    border: 1px solid gray;
+    height: 250px;
+}
+
+.pie img{
+    width: 100%;
+}
+
+.columns {
+    display: flex;
+}
+
+.pie .columns div {
+width: 50%;
+}
+
+.pie .title {
+    text-align: left;
+    font-weight: bold;
+}
+
+.pie .price {
+    text-align: right;
+}
+
+button {
+    padding: 10px;
+    background-color: rgb(155, 137, 146);
+    border: 1px solid rgb(155, 137, 146);
+    color: white;
+    border-radius: 5px;
+    height: 50px;
+}
+
+
 /* Desktop */
 @media only screen and (min-width: 768px){
     main {
@@ -78,6 +120,11 @@ article {
 
     aside {
         margin-left: 2%;
+    }
+
+    .columns-desktop {
+        display: flex;
+        margin: 10px;
     }
 
 }

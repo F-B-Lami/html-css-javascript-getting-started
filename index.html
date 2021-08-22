@@ -32,7 +32,7 @@
     <img class="banner" src="/images/banner.png" alt="Bethany's Pie Shop">
     <h1>Welcome to Bathany's Pie Shop</h1>
         <p class="sub-title">From pecan to plum, our pies are made in with the warmth and tradition of home. 
-           Take a moment to <a href="/pies.html">browse our pies</a> and see which of our 
+           Take a moment to <a href="/pies.html" >browse our pies</a> and see which of our 
            delectable desserts are soon to arrive on your doorstep.
         </p>
     </article>
@@ -49,4 +49,11 @@
         </nav>
     </footer>
 </body>
+<script>
+window.addEventListener("DOMContentLoaded", event => {
+    let subTitle = document.querySelector(".sub-title");
+    let toPiesPage = subTitle.querySelector("a[href='/pies.html']")
+    toPiesPage.setAttribute("target", "_blank");
+});
+</script>
 </html>

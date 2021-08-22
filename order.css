@@ -1,0 +1,41 @@
+.input-group {
+    margin: 15px 0 15px 0;
+}
+
+.input-group label{
+    font-weight: bolder;
+    font-size: 20px;
+}
+
+.input-group input[type="text"], 
+.input-group textarea, 
+.input-group select {
+  padding: 10px;
+  width: 100%;
+  border-radius: 5px;
+  border: 1px solid gray;
+}
+
+input[type="reset"]{
+    background: transparent;
+    cursor: pointer;
+    text-decoration: underline;
+    border: none;
+}
+
+input[type="submit"]{
+    height: 40px;
+    background-color: antiquewhite;
+    font-size:medium;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+@media only screen and (min-width: 768px){
+    .input-group input[type="text"], 
+    .input-group textarea, 
+    .input-group select {
+        width: 50%;
+    }
+
+}
